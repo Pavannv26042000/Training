@@ -9,6 +9,7 @@ import android.widget.Button;
 
 import com.example.training.projects.Example1;
 import com.example.training.projects.Example2;
+import com.example.training.projects.Example4;
 import com.example.training.projects.LoginPage;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         Button btn = findViewById(R.id.button1);
         Button btn1 = findViewById(R.id.button2);
         Button btn2 =  findViewById(R.id.button3);
+        Button btn3 = findViewById(R.id.button4);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -40,6 +42,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view){
                 Intent intent3 = new Intent(view.getContext(), LoginPage.class);
                 view.getContext().startActivity(intent3);
+            }
+        });
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent4 = new Intent(view.getContext(), Example4.class);
+                view.getContext().startActivity(intent4);
             }
         });
 
