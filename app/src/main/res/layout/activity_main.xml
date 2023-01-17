@@ -45,6 +45,12 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/button3"
             android:text="Calculator"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/shareData"
+            android:layout_below="@id/calculatorButton"
+            android:text="Share Data Using Intents"/>
 
 
     </RelativeLayout>

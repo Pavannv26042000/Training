@@ -11,6 +11,7 @@ import com.example.training.projects.Example1;
 import com.example.training.projects.Example2;
 import com.example.training.projects.Example4;
 import com.example.training.projects.LoginPage;
+import com.example.training.projects.sharingdatausingintents.SharingDataUsingIntents;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         Button btn1 = findViewById(R.id.button2);
         Button btn2 =  findViewById(R.id.button3);
         Button btn3 = findViewById(R.id.button4);
+        Button btn4 = findViewById(R.id.shareData);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -49,6 +51,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent4 = new Intent(view.getContext(), Example4.class);
                 view.getContext().startActivity(intent4);
+            }
+        });
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent5 = new Intent(view.getContext(), SharingDataUsingIntents.class);
+                view.getContext().startActivity(intent5);
             }
         });
 
