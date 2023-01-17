@@ -61,6 +61,7 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
         <activity android:name=".projects.sharingdatausingintents.SecondActivity"
             android:theme="@style/Theme.AppCompat.Light"
             android:exported="false">
